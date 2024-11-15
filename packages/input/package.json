@@ -23,12 +23,12 @@
   },
   "main": "./dist/demoMui-input.umd.js",
   "module": "./dist/demoMui-input.mjs",
-  "types": "./dist/demoMui-input.d.ts",
+  "types": "./dist/input.vue.d.ts",
   "exports": {
     ".": {
       "require": "./dist/demoMui-input.umd.js",
       "module": "./dist/demoMui-input.mjs",
-      "types": "./dist/demoMui-input.d.ts"
+      "types": "./dist/input.vue.d.ts"
     }
   },
   "files": [

@@ -23,12 +23,12 @@
   },
   "main": "./dist/demoMui-shared.umd.js",
   "module": "./dist/demoMui-shared.mjs",
-  "types": "./dist/demoMui-shared.d.ts",
+  "types": "./dist/hello.d.ts",
   "exports": {
     ".": {
       "require": "./dist/demoMui-shared.umd.js",
       "module": "./dist/demoMui-shared.mjs",
-      "types": "./dist/demoMui-shared.d.ts"
+      "types": "./dist/hello.d.ts"
     }
   },
   "files": [

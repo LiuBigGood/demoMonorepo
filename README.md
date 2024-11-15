@@ -1,7 +1,14 @@
-1.项目搭建
-Vue + Vite + monorepo 
+1.项目基础结构搭建
+Vue + monorepo 
+2.配置打包和类型校验
+vite + .ts配置
+3.monorepo及时响应以及d.ts文件处理
 
-2.glob语法补充
+***tsc、编辑器和vite对同样的@openxui/shared 的理解确实是不一样
+Vite默认会看成一个npm包
+tsc 根据 path 中设置的别名，将这个 id 解析成 <rootPath>/<baseUrl>/packages/shared/src
+
+***glob语法补充
 glob语法  --匹配文件路径  前端工程化打包中 / 对应node环境
 const glob = require('glob')
 const files = glob.sync('src/**/*.js{,x}')

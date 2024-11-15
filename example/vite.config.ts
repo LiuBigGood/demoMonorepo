@@ -1,7 +1,7 @@
 // packages/shared/vite.config.ts
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import dts from 'vite-plugin-dts'
+import { join } from 'node:path'
 export default defineConfig({
   build: {
     // 产物输出目录，默认值就是 dist。我们使用默认值，注释掉此字段。
@@ -25,5 +25,13 @@ export default defineConfig({
     // 为了方便学习，查看构建产物，将此置为 false，不要混淆产物代码
     minify: false,
   },
-  plugins:[vue(),dts({ rollupTypes: true })],
+  plugins:[vue()],
+  resolve:{
+    alias: [
+      {
+        find:  /^@demo-mui\/(.+)$/,
+        replacement: join(__dirname, '..', 'packages', '$1', 'src') 
+      }
+    ]
+  }
 })

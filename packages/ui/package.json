@@ -23,12 +23,12 @@
   },
   "main": "./dist/demoMui-Ui.umd.js",
   "module": "./dist/demoMui-Ui.mjs",
-  "types": "./dist/demoMui-Ui.d.ts",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "require": "./dist/demoMui-Ui.umd.js",
       "module": "./dist/demoMui-Ui.mjs",
-      "types": "./dist/demoMui-Ui.d.ts"
+      "types": "./dist/index.d.ts"
     }
   },
   "files": [

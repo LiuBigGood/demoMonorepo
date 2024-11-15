@@ -2,14 +2,21 @@
   "name": "demo-mui",
   "private": "true",
   "scripts": {
-     "build:ui": "pnpm --filter ./packages/** run build"
+    "clean:type": "rimraf ./dist",
+    "type:node": "tsc -p tsconfig.node.json --noEmit --composite false --declaration --emitDeclarationOnly",
+    "type:src": "pnpm run clean:type && vue-tsc -p tsconfig.src.json --composite false --declaration --emitDeclarationOnly",
+    "mv-type": "tsx ./scripts/dts-mv.ts",
+    "build:ui": "pnpm run type:src && pnpm --filter ./packages/** run build && pnpm run mv-type"
   },
   "devDependencies": {
+    "@types/node": "^22.9.0",
     "@vitejs/plugin-vue": "^5.2.0",
+    "rimraf": "^6.0.1",
     "sass": "^1.80.7",
+    "tsx": "^4.19.2",
     "typescript": "^5.6.3",
     "vite": "^5.4.11",
-    "vite-plugin-dts": "^4.3.0"
+    "vue-tsc": "^2.1.10"
   },
   "dependencies": {
     "vue": "^3.5.12"
