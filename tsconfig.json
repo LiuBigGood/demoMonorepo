@@ -14,5 +14,8 @@
     // 聚合 ts project
     { "path": "./tsconfig.src.json" },
     { "path": "./tsconfig.node.json" }
+  ],
+  "include": [
+    "./**.json"
   ]
 }

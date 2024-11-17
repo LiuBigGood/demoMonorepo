@@ -1,9 +1,9 @@
 <!-- demo/index.html -->
 <template>
-    <div>
-        <Button>猫叫</Button>
-        <Input />
-    </div>
+  <div>
+    <Button>猫叫</Button>
+    <Input />
+  </div>
 </template>
 <script setup>
 import { Button, Input } from '@demo-mui/ui'

@@ -1,6 +1,9 @@
 <template>
-<button class="openx-button" @click="clickHandler">
-    <slot></slot>
+  <button
+    class="openx-button"
+    @click="clickHandler"
+  >
+    <slot />
   </button>
 </template>
 
@@ -17,7 +20,7 @@ function clickHandler() {
 </script>
 
 <style lang="scss" scoped>
-.openx-button{
+.openx-button {
     width: 300px;
     height: 80px;
     background: pink;

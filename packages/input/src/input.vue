@@ -25,5 +25,6 @@ function inputHandler(e: any) {
     class="openx-input" 
     type="text" 
     :value="modelValue" 
-    @input="inputHandler" />
+    @input="inputHandler"
+  >
 </template>
