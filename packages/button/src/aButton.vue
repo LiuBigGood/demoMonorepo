@@ -21,8 +21,8 @@ function clickHandler() {
 
 <style lang="scss" scoped>
 .openx-button {
-    width: 300px;
-    height: 80px;
-    background: pink;
+  width: 300px;
+  height: 80px;
+  background: pink;
 }
 </style>

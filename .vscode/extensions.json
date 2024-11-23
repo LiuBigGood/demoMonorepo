@@ -1,11 +1,4 @@
 // .vscode/extensions.json
 {
-    "recommendations": [
-      "vue.volar",
-      "vue.vscode-typescript-vue-plugin",
-    "esbenp.prettier-vscode",
-   "stylelint.vscode-stylelint",
-    "dbaeumer.vscode-eslint",
-    ]
-  }
-  
+  "recommendations": ["vue.volar", "vue.vscode-typescript-vue-plugin", "esbenp.prettier-vscode", "stylelint.vscode-stylelint", "dbaeumer.vscode-eslint"]
+}
