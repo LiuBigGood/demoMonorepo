@@ -1,10 +1,10 @@
 <template>
-  <button
+  <div
     class="openx-button"
     @click="clickHandler"
   >
     <slot />
-  </button>
+  </div>
 </template>
 
 <script setup lang="ts">
